@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FediMTL</title>
+    <meta name="description" content="A conference for decentralized social networks and the social web - February 24, 2026">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Development Notice Overlay -->
+    <div id="dev-overlay" class="dev-overlay">
+        <div class="dev-overlay-content">
+            <p class="en">All Details TBD - Site Under Development</p>
+            <p class="fr">Tous les détails à venir - Site en développement</p>
+            <button id="accept-overlay" class="btn btn-primary">Accept</button>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-logo">
+                    <img src="images/logo/logo-horizontal.png" alt="FediMTL">
+                </h1>
+                <nav class="main-nav">
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+                        <span class="en">FR</span>
+                        <span class="fr">EN</span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#about"><span class="en">About</span><span class="fr">À propos</span></a></li>
+                        <li><a href="#speakers"><span class="en">Speakers</span><span class="fr">Conférenciers</span></a></li>
+                        <li><a href="#schedule"><span class="en">Schedule</span><span class="fr">Horaire</span></a></li>
+                        <li><a href="#venue"><span class="en">Venue</span><span class="fr">Lieu</span></a></li>
+                        <li><a href="#register" class="nav-cta"><span class="en">Register</span><span class="fr">S'inscrire</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">FediMTL</h2>
+                <p class="hero-tagline">
+                    <span class="en">A Canadian conference for decentralized social networks and the social web</span>
+                    <span class="fr">Une conférence canadienne sur les réseaux sociaux décentralisés et le web social</span>
+                </p>
+                <div class="hero-details">
+                    <div class="hero-date">
+                        <span class="en">February 24, 2026</span>
+                        <span class="fr">24 février 2026</span>
+                    </div>
+                    <div class="hero-location">
+                        <span class="en">Le Ministère, Montreal</span>
+                        <span class="fr">Le Ministère, Montréal</span>
+                    </div>
+                </div>
+                <a href="#register" class="btn btn-primary">
+                    <span class="en">Register Now</span>
+                    <span class="fr">S'inscrire maintenant</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">One Day of Innovation</span>
+                <span class="fr">Une journée d'innovation</span>
+            </h2>
+            <div class="about-content">
+                <p class="en">
+                    Join us for a full day of engaging talks, lightning presentations, and demos exploring
+                    decentralized social networks, the fediverse, and the future of the social web. Connect
+                    with developers, creators, and enthusiasts who are building a more open and interconnected
+                    internet.
+                </p>
+                <p class="fr">
+                    Rejoignez-nous pour une journée complète de conférences, présentations éclair et démonstrations
+                    explorant les réseaux sociaux décentralisés, le fédiverse et l'avenir du web social. Connectez-vous
+                    avec des développeurs, créateurs et passionnés qui construisent un internet plus ouvert et interconnecté.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <h3 class="en">Curated Speakers</h3>
+                        <h3 class="fr">Conférenciers sélectionnés</h3>
+                        <p class="en">Expert voices from the decentralized web community</p>
+                        <p class="fr">Des voix expertes de la communauté du web décentralisé</p>
+                    </div>
+                    <div class="highlight">
+                        <h3 class="en">Lightning Talks</h3>
+                        <h3 class="fr">Présentations éclair</h3>
+                        <p class="en">Quick, impactful presentations on emerging topics</p>
+                        <p class="fr">Présentations rapides et percutantes sur des sujets émergents</p>
+                    </div>
+                    <div class="highlight">
+                        <h3 class="en">Live Demos</h3>
+                        <h3 class="fr">Démonstrations en direct</h3>
+                        <p class="en">See decentralized apps and protocols in action</p>
+                        <p class="fr">Découvrez les applications et protocoles décentralisés en action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">Featured Speakers</span>
+                <span class="fr">Conférenciers vedettes</span>
+            </h2>
+            <div class="speakers-grid">
+                <!-- Speaker 1 - Evan Prodromou -->
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/speakers/evan.png" alt="Evan Prodromou">
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Evan Prodromou</h3>
+                        <p class="speaker-title">
+                            <span class="en">ActivityPub Protocol Designer, Social Web Foundation</span>
+                            <span class="fr">Concepteur du protocole ActivityPub, Social Web Foundation</span>
+                        </p>
+                        <p class="speaker-bio en">
+                            Co-author of the ActivityPub protocol and sometimes called "The Father of the Fediverse," Evan made the first-ever post on the social web in May 2008.
+                        </p>
+                        <p class="speaker-bio fr">
+                            Co-auteur du protocole ActivityPub et parfois appelé « Le père du Fediverse », Evan a publié le tout premier message sur le web social en mai 2008.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 - Paige Saunders -->
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/speakers/paige.png" alt="Paige Saunders">
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Paige Saunders</h3>
+                        <p class="speaker-title">
+                            <span class="en">Founder of Canadian Civil, CEO of FediHost</span>
+                            <span class="fr">Fondateur de Canadian Civil, PDG de FediHost</span>
+                        </p>
+                        <p class="speaker-bio en">
+                            Montreal-based advocacy journalist who makes videos about cities and urbanism, and co-founder of FediHost, a fully managed fediverse hosting platform.
+                        </p>
+                        <p class="speaker-bio fr">
+                            Journaliste engagé basé à Montréal qui réalise des vidéos sur les villes et l'urbanisme, et co-fondateur de FediHost, une plateforme d'hébergement fediverse entièrement gérée.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 - Philippe Larose Cadieux -->
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="images/speakers/philippe.png" alt="Philippe Larose Cadieux">
+                    </div>
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">Philippe Larose Cadieux</h3>
+                        <p class="speaker-title">
+                            <span class="en">CEO and Co-Founder of Qlub</span>
+                            <span class="fr">PDG et co-fondateur de Qlub</span>
+                        </p>
+                        <p class="speaker-bio en">
+                            Entrepreneur on a mission to give Quebecers access to information and build digital sovereignty through Qlub, a Quebec-based social network.
+                        </p>
+                        <p class="speaker-bio fr">
+                            Entrepreneur dont la mission est de redonner aux Québécois l'accès à l'information et de bâtir notre souveraineté numérique grâce à Qlub, un réseau social québécois.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">Event Schedule</span>
+                <span class="fr">Programme de l'événement</span>
+            </h2>
+            <div class="schedule-date">
+                <span class="en">Monday, February 24, 2026</span>
+                <span class="fr">Lundi 24 février 2026</span>
+            </div>
+            <div class="schedule-timeline">
+                <div class="schedule-item">
+                    <div class="schedule-time">8:30 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Welcome</h3>
+                        <h3 class="fr">Bienvenue</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">8:45 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation A</h3>
+                        <h3 class="fr">Présentation A</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Technical Speaker A</div>
+                    <div class="schedule-speaker fr">Conférencier technique A</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">9:30 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation B</h3>
+                        <h3 class="fr">Présentation B</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Technical Speaker B</div>
+                    <div class="schedule-speaker fr">Conférencier technique B</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">10:15 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Morning Break</h3>
+                        <h3 class="fr">Pause du matin</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">10:45 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation C</h3>
+                        <h3 class="fr">Présentation C</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Technical Speaker C</div>
+                    <div class="schedule-speaker fr">Conférencier technique C</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:30 AM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation D</h3>
+                        <h3 class="fr">Présentation D</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Technical Speaker D</div>
+                    <div class="schedule-speaker fr">Conférencier technique D</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">12:15 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Lunch</h3>
+                        <h3 class="fr">Dîner</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">1:15 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">DIY Patreon</h3>
+                        <h3 class="fr">Patreon DIY</h3>
+                        <p class="schedule-description en">Building a Canadian Patreon alternative in a week</p>
+                        <p class="schedule-description fr">Construire une alternative canadienne à Patreon en une semaine</p>
+                    </div>
+                    <div class="schedule-speaker">Paige Saunders</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">2:00 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation E</h3>
+                        <h3 class="fr">Présentation E</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Non-Technical Speaker E</div>
+                    <div class="schedule-speaker fr">Conférencier non-technique E</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">2:45 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Afternoon Break</h3>
+                        <h3 class="fr">Pause de l'après-midi</h3>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">3:15 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation F</h3>
+                        <h3 class="fr">Présentation F</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker en">Non-Technical Speaker F</div>
+                    <div class="schedule-speaker fr">Conférencier non-technique F</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">4:00 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Presentation</h3>
+                        <h3 class="fr">Présentation</h3>
+                        <p class="schedule-description en">TBA</p>
+                        <p class="schedule-description fr">À venir</p>
+                    </div>
+                    <div class="schedule-speaker">Philippe Larose Cadieux</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">5:00 PM</div>
+                    <div class="schedule-content">
+                        <h3 class="en">Social Web Social</h3>
+                        <h3 class="fr">Social Web Social</h3>
+                        <p class="en">Networking event</p>
+                        <p class="fr">Événement de réseautage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="venue">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">Venue</span>
+                <span class="fr">Lieu</span>
+            </h2>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>Le Ministère</h3>
+                    <p class="venue-address">
+                        4521 Saint-Laurent<br>
+                        Montréal, QC
+                    </p>
+                    <div class="venue-details">
+                        <h4 class="en">Getting There</h4>
+                        <h4 class="fr">S'y rendre</h4>
+                        <p class="en">
+                            <strong>Metro:</strong> Mont-Royal station (Orange line)<br>
+                            <strong>Bus:</strong> Multiple routes along Saint-Laurent<br>
+                            <strong>Bike:</strong> Bixi at Mont-Royal / Clark<br>
+                        </p>
+                        <p class="fr">
+                            <strong>Métro:</strong> Station Mont-Royal (ligne orange)<br>
+                            <strong>Bus:</strong> Plusieurs lignes le long de Saint-Laurent<br>
+                            <strong>Vélo:</strong> Stations BIXI à proximité<br>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="venue-map">
+                    <iframe
+                        width="600"
+                        height="400"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-73.5898%2C45.5185%2C-73.5838%2C45.5225&amp;layer=mapnik&amp;marker=45.5204595%2C-73.5867828"
+                        style="border: 1px solid black"
+                        title="Map of Le Ministère, 4521 Saint-Laurent, Montréal">
+                    </iframe>
+                    <br>
+                    <small>
+                        <a href="https://www.openstreetmap.org/?mlat=45.5204595&amp;mlon=-73.5867828#map=18/45.5204595/-73.5867828" target="_blank" rel="noopener">
+                            <span class="en">View Larger Map</span>
+                            <span class="fr">Voir la carte en grand</span>
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="register-content">
+                <h2 class="section-title">
+                    <span class="en">Register for FediMTL</span>
+                    <span class="fr">S'inscrire à FediMTL</span>
+                </h2>
+                <p class="register-text">
+                    <span class="en">
+                        Don't miss this opportunity to connect with the decentralized web community.
+                        Limited spots available!
+                    </span>
+                    <span class="fr">
+                        Ne manquez pas cette opportunité de vous connecter avec la communauté du web décentralisé.
+                        Places limitées!
+                    </span>
+                </p>
+                <div class="register-details">
+                    <div class="ticket-info">
+                        <h3 class="en">Ticket Information</h3>
+                        <h3 class="fr">Information sur les billets</h3>
+                        <p class="en">
+                            <strong>Early Bird:</strong> TBA<br>
+                            <strong>Regular:</strong> TBA<br>
+                            <strong>Student:</strong> TBA
+                        </p>
+                        <p class="fr">
+                            <strong>Lève-tôt:</strong> À venir<br>
+                            <strong>Régulier:</strong> À venir<br>
+                            <strong>Étudiant:</strong> À venir
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-large">
+                    <span class="en">Get Your Ticket</span>
+                    <span class="fr">Obtenir votre billet</span>
+                </a>
+                <p class="register-note">
+                    <span class="en">Registration link coming soon</span>
+                    <span class="fr">Lien d'inscription à venir</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FediMTL</h3>
+                    <p class="en">Building connections in the decentralized web</p>
+                    <p class="fr">Créer des connexions dans le web décentralisé</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="en">Contact</h4>
+                    <h4 class="fr">Contact</h4>
+                    <p>
+                        <a href="mailto:info@fedimtl.ca">info@fedimtl.ca</a><br>
+                        <a href="https://mastodon.social/@fedimtl" target="_blank" rel="noopener">@fedimtl on Mastodon</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="en">Resources</h4>
+                    <h4 class="fr">Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><span class="en">Code of Conduct</span><span class="fr">Code de conduite</span></a></li>
+                        <li><a href="#"><span class="en">Privacy Policy</span><span class="fr">Politique de confidentialité</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FediMTL. <span class="en">All rights reserved.</span><span class="fr">Tous droits réservés.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
