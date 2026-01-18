@@ -2,11 +2,15 @@
 
 /* ===== CSS Variables ===== */
 :root {
-    --primary-scarlet: #dd0f0f;
-    --indigo-ink: #27187e;
-    --cornflower-blue: #758bfd;
-    --periwinkle: #aeb8fe;
-    --platinum: #f1f2f6;
+    --primary-color: #CB2222;
+    --primary-contrast: #002642;
+
+    --accent: #E59500;
+
+
+
+    --dark: #02040F;
+    --light: #E5DADA;
 
     --shadow-sm: 0 1px 3px rgba(39, 24, 126, 0.1);
     --shadow-md: 0 4px 6px rgba(39, 24, 126, 0.15);
@@ -39,8 +43,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--indigo-ink);
-    background-color: var(--platinum);
+    color: var(--primary-contrast);
+    background-color: var(--light);
 }
 
 .container {
@@ -78,13 +82,13 @@ p {
 }
 
 a {
-    color: var(--cornflower-blue);
+    color: var(--accent);
     text-decoration: none;
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
 }
 
 /* ===== Buttons ===== */
@@ -102,7 +106,7 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--cornflower-blue), var(--primary-scarlet));
+    background: linear-gradient(135deg, var(--accent), var(--primary-color));
     color: white;
 }
 
@@ -119,8 +123,8 @@ a:hover {
 
 /* ===== Header ===== */
 .site-header {
-    background: var(--platinum);
-    border-bottom: 1px solid var(--periwinkle);
+    background: var(--light);
+    border-bottom: 1px solid var(--dark);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -139,7 +143,7 @@ a:hover {
 .site-logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -156,9 +160,9 @@ a:hover {
 }
 
 .lang-toggle {
-    background: var(--platinum);
-    color: var(--indigo-ink);
-    border: 1px solid var(--periwinkle);
+    background: var(--light);
+    color: var(--primary-contrast);
+    border: 1px solid var(--dark);
     padding: 8px 16px;
     border-radius: var(--border-radius);
     font-weight: 600;
@@ -167,9 +171,9 @@ a:hover {
 }
 
 .lang-toggle:hover {
-    background: var(--cornflower-blue);
+    background: var(--primary-color);
     color: white;
-    border-color: var(--cornflower-blue);
+    border-color: var(--primary-color);
 }
 
 .nav-links {
@@ -180,30 +184,30 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     font-weight: 500;
     transition: var(--transition);
 }
 
 .nav-links a:hover {
-    color: var(--cornflower-blue);
+    color: var(--accent);
 }
 
 .nav-cta {
-    background: var(--cornflower-blue);
+    background: var(--primary-color);
     color: white !important;
     padding: 8px 20px;
     border-radius: var(--border-radius);
 }
 
 .nav-cta:hover {
-    background: var(--indigo-ink);
+    background: var(--primary-contrast);
     transform: translateY(-1px);
 }
 
 /* ===== Hero Section ===== */
 .hero {
-    background: linear-gradient(135deg, var(--cornflower-blue), var(--primary-scarlet));
+    background: url('../images/background/BackgroundBG.svg') center/cover no-repeat;
     color: white;
     padding: 6rem 0;
     text-align: center;
@@ -244,12 +248,12 @@ a:hover {
 
 .hero .btn-primary {
     background: white;
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     font-size: 1.125rem;
 }
 
 .hero .btn-primary:hover {
-    background: var(--platinum);
+    background: var(--light);
 }
 
 /* ===== Section Styles ===== */
@@ -261,12 +265,12 @@ section {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
 }
 
 /* ===== About Section ===== */
 .about {
-    background: var(--platinum);
+    background: var(--light);
 }
 
 .about-content {
@@ -277,7 +281,7 @@ section {
 
 .about-content p {
     font-size: 1.125rem;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 3rem;
 }
 
@@ -302,12 +306,12 @@ section {
 }
 
 .highlight h3 {
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
 .highlight p {
-    color: var(--periwinkle);
+    color: var(--dark);
     font-size: 1rem;
     margin-bottom: 0;
 }
@@ -325,7 +329,7 @@ section {
 
 .speaker-card {
     background: white;
-    border: 1px solid var(--periwinkle);
+    border: 1px solid var(--dark);
     border-radius: var(--border-radius);
     padding: 2rem;
     transition: var(--transition);
@@ -342,7 +346,7 @@ section {
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--cornflower-blue);
+    border: 4px solid var(--primary-contrast);
 }
 
 .speaker-image img {
@@ -352,7 +356,7 @@ section {
 }
 
 .speaker-tba .speaker-image {
-    border-color: var(--periwinkle);
+    border-color: var(--primary-contrast);
     opacity: 0.7;
 }
 
@@ -362,32 +366,32 @@ section {
 
 .speaker-name {
     font-size: 1.5rem;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 0.5rem;
 }
 
 .speaker-title {
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .speaker-bio {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
 /* ===== Schedule Section ===== */
 .schedule {
-    background: var(--platinum);
+    background: var(--light);
 }
 
 .schedule-date {
     text-align: center;
     font-size: 1.25rem;
-    color: var(--cornflower-blue);
+    color: var(--accent);
     font-weight: 600;
     margin-bottom: 3rem;
 }
@@ -404,7 +408,7 @@ section {
     padding: 1.5rem;
     background: white;
     border-radius: var(--border-radius);
-    border-left: 4px solid var(--cornflower-blue);
+    border-left: 4px solid var(--primary-contrast);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     align-items: flex-start;
@@ -417,24 +421,24 @@ section {
 
 .schedule-time {
     font-weight: 700;
-    color: var(--cornflower-blue);
+    color: var(--accent);
     font-size: 1.125rem;
     min-width: 100px;
 }
 
 .schedule-content h3 {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 0.25rem;
 }
 
 .schedule-content p {
-    color: var(--periwinkle);
+    color: var(--dark);
     font-size: 0.95rem;
     margin-bottom: 0;
 }
 
 .schedule-content .schedule-description {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     font-size: 0.95rem;
     margin-top: 0.5rem;
 }
@@ -446,7 +450,7 @@ section {
 .schedule-speaker {
     text-align: right;
     font-weight: 700;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     min-width: 180px;
     padding-left: 1rem;
     margin-left: auto;
@@ -466,13 +470,13 @@ section {
 
 .venue-info h3 {
     font-size: 2rem;
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .venue-address {
     font-size: 1.125rem;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 2rem;
 }
 
@@ -483,13 +487,13 @@ section {
 
 .venue-details h4,
 .venue-accessibility h4 {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 0.75rem;
 }
 
 .venue-details p,
 .venue-accessibility p {
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     line-height: 1.8;
 }
 
@@ -516,7 +520,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: color-mix(in srgb, var(--cornflower-blue) 90%, transparent);
+    background: color-mix(in srgb, var(--accent) 90%, transparent);
     color: white;
     padding: 1rem;
     text-align: center;
@@ -531,7 +535,7 @@ section {
 
 /* ===== Registration Section ===== */
 .register {
-    background: linear-gradient(135deg, var(--cornflower-blue), var(--primary-scarlet));
+    background: url('../images/background/BackgroundBG.svg') center/cover no-repeat;
     color: white;
     text-align: center;
 }
@@ -569,12 +573,12 @@ section {
 
 .register .btn-primary {
     background: white;
-    color: var(--cornflower-blue);
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .register .btn-primary:hover {
-    background: var(--platinum);
+    background: var(--light);
 }
 
 .register-note {
@@ -585,7 +589,7 @@ section {
 
 /* ===== Footer ===== */
 .site-footer {
-    background: var(--indigo-ink);
+    background: var(--primary-contrast);
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -666,7 +670,7 @@ section {
 .dev-overlay-content p {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--indigo-ink);
+    color: var(--primary-contrast);
     margin-bottom: 2rem;
 }
 
