@@ -12,9 +12,9 @@
     --dark: #02040F;
     --light: #E5DADA;
 
-    --shadow-sm: 0 1px 3px rgba(39, 24, 126, 0.1);
-    --shadow-md: 0 4px 6px rgba(39, 24, 126, 0.15);
-    --shadow-lg: 0 10px 25px rgba(39, 24, 126, 0.2);
+    --shadow-sm: 0 1px 3px rgba(2, 4, 15, 0.1);
+    --shadow-md: 0 4px 6px rgba(2, 4, 15, 0.15);
+    --shadow-lg: 0 10px 25px rgba(2, 4, 15, 0.2);
     --border-radius: 8px;
     --transition: all 0.3s ease;
 }
@@ -124,12 +124,11 @@ a:hover {
 /* ===== Header ===== */
 .site-header {
     background: var(--light);
-    border-bottom: 1px solid var(--dark);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-lg);
 }
 
 .header-content {
@@ -207,7 +206,7 @@ a:hover {
 
 /* ===== Hero Section ===== */
 .hero {
-    background: url('../images/background/BackgroundBG.svg') center/cover no-repeat;
+    background: url('../images/background/WallsBackgroundOrange.svg') center/cover no-repeat;
     color: white;
     padding: 6rem 0;
     text-align: center;
@@ -535,7 +534,7 @@ section {
 
 /* ===== Registration Section ===== */
 .register {
-    background: url('../images/background/BackgroundBG.svg') center/cover no-repeat;
+    background: url('../images/background/WallsBackgroundOrange.svg') center/cover no-repeat;
     color: white;
     text-align: center;
 }
