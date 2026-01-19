@@ -11,11 +11,14 @@
     --dark: #02040F;
     --light: #E5DADA;
 
+    --white: #FAF8F8;
+
     --shadow-sm: 0 1px 3px rgba(2, 4, 15, 0.1);
     --shadow-md: 0 4px 6px rgba(2, 4, 15, 0.15);
     --shadow-lg: 0 10px 25px rgba(2, 4, 15, 0.2);
     --border-radius: 8px;
-    --transition: all 1s ease 0.5s;
+    --transition-hover: all 0.3s ease;
+    --transition-target: all 1s ease 0.5s;
 }
 
 /* ===== Language Toggle ===== */
@@ -83,7 +86,7 @@ p {
 a {
     color: var(--accent);
     text-decoration: none;
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 a:hover {
@@ -100,7 +103,7 @@ a:hover {
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-hover);
     text-decoration: none;
 }
 
@@ -164,7 +167,7 @@ a:hover {
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .lang-toggle:hover {
@@ -183,7 +186,7 @@ a:hover {
 .nav-links a {
     color: var(--primary-contrast);
     font-weight: 500;
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .nav-links a:hover {
@@ -244,7 +247,7 @@ a:hover {
 }
 
 .hero .btn-primary {
-    background: white;
+    background: var(--white);
     color: var(--primary-color);
     font-size: 1.125rem;
 }
@@ -290,11 +293,11 @@ section {
 }
 
 .highlight {
-    background: white;
+    background: var(--white);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .highlight:hover {
@@ -315,7 +318,7 @@ section {
 
 /* ===== Speakers Section ===== */
 .speakers {
-    background: white;
+    background: var(--primary-color);
     position: relative;
     overflow: hidden;
 }
@@ -355,6 +358,10 @@ section {
     z-index: 1;
 }
 
+.speakers .section-title {
+    color: var(--white);
+}
+
 .speakers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -362,11 +369,11 @@ section {
 }
 
 .speaker-card {
-    background: white;
+    background: var(--white);
     border: 1px solid var(--dark);
     border-radius: var(--border-radius);
     padding: 2rem;
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .speaker-card:hover {
@@ -378,6 +385,7 @@ section {
 .speaker-card.targeted {
     box-shadow: var(--shadow-lg);
     transform: translateY(-5px);
+    transition: var(--transition-target);
 }
 
 .speaker-image {
@@ -400,7 +408,7 @@ section {
 }
 
 .speaker-tba .speaker-image {
-    border-color: var(--light);
+    border-color: var(--white);
     opacity: 0.7;
 }
 
@@ -459,11 +467,11 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
+    background: var(--white);
     border-radius: var(--border-radius);
     border-left: 4px solid var(--primary-contrast);
     box-shadow: var(--shadow-sm);
-    transition: var(--transition);
+    transition: var(--transition-hover);
     align-items: flex-start;
 }
 
@@ -473,6 +481,7 @@ section {
     box-shadow: var(--shadow-md);
     transform: translateX(20px);
     border-left-color: var(--primary-color);
+    transition: var(--transition-target);
 }
 
 @keyframes highlight-slide {
@@ -539,7 +548,7 @@ section {
 
 /* ===== Venue Section ===== */
 .venue {
-    background: white;
+    background: var(--white);
     position: relative;
     overflow: hidden;
 }
@@ -614,7 +623,7 @@ section {
     text-align: center;
     font-weight: 600;
     opacity: 0;
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .venue-map a:hover .map-overlay {
@@ -660,7 +669,7 @@ section {
 }
 
 .register .btn-primary {
-    background: white;
+    background: var(--white);
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
@@ -702,7 +711,7 @@ section {
 
 .footer-section a {
     color: rgba(255, 255, 255, 0.8);
-    transition: var(--transition);
+    transition: var(--transition-hover);
 }
 
 .footer-section a:hover {
@@ -747,7 +756,7 @@ section {
 }
 
 .dev-overlay-content {
-    background: white;
+    background: var(--white);
     padding: 3rem;
     border-radius: var(--border-radius);
     text-align: center;

@@ -174,13 +174,7 @@
     });
 
     // ===== Floating Circles =====
-    function createFloatingCircles(container, numCircles) {
-        const colors = [
-            'var(--primary-color)',
-            'var(--primary-contrast)',
-            'var(--accent)'
-        ];
-
+    function createFloatingCircles(container, numCircles, colors) {
         for (let i = 0; i < numCircles; i++) {
             const circle = document.createElement('div');
             circle.className = 'floating-circle';
@@ -189,7 +183,7 @@
             circle.style.left = Math.random() * 100 + '%';
             circle.style.top = Math.random() * 100 + '%';
 
-            // Random color
+            // Random color from provided colors
             const color = colors[Math.floor(Math.random() * colors.length)];
             circle.style.borderColor = color;
 
@@ -206,16 +200,20 @@
         }
     }
 
-    // Speakers section - 36 circles
+    // Speakers section - 36 circles (white only)
     const speakersCircles = document.querySelector('.speakers .floating-circles');
     if (speakersCircles) {
-        createFloatingCircles(speakersCircles, 36);
+        createFloatingCircles(speakersCircles, 36, ['var(--white)']);
     }
 
-    // Venue section - 18 circles (half)
+    // Venue section - 18 circles (mixed colors)
     const venueCircles = document.querySelector('.venue .floating-circles');
     if (venueCircles) {
-        createFloatingCircles(venueCircles, 18);
+        createFloatingCircles(venueCircles, 18, [
+            'var(--primary-color)',
+            'var(--primary-contrast)',
+            'var(--accent)'
+        ]);
     }
 
     // ===== Form Handling (for future use) =====
