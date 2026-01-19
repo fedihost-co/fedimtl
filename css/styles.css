@@ -354,8 +354,12 @@ section {
     object-fit: cover;
 }
 
+.speaker-tba {
+    border-color: var(--light);
+}
+
 .speaker-tba .speaker-image {
-    border-color: var(--primary-contrast);
+    border-color: var(--light);
     opacity: 0.7;
 }
 
