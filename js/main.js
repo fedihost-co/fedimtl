@@ -108,10 +108,8 @@
                     target.classList.add('targeted');
                     setTimeout(() => {
                         target.classList.remove('targeted');
-                        // Clear the hash to remove :target styling
-                        const scrollPos = window.scrollY;
-                        window.location.hash = '';
-                        window.scrollTo(0, scrollPos);
+                        // Clear the hash to remove :target styling without scrolling
+                        history.replaceState(null, null, window.location.pathname + window.location.search);
                     }, 3000);
                 }
             }
@@ -128,10 +126,8 @@
                 target.classList.add('targeted');
                 setTimeout(() => {
                     target.classList.remove('targeted');
-                    // Remove hash and force :target to clear
-                    const scrollPos = window.scrollY;
-                    window.location.hash = '';
-                    window.scrollTo(0, scrollPos);
+                    // Remove hash and force :target to clear without scrolling
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
                 }, 3000);
             }
         }
