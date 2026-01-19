@@ -4,7 +4,6 @@
 :root {
     --primary-color: #CB2222;
     --primary-contrast: #002642;
-
     --accent: #E59500;
 
 
@@ -317,6 +316,43 @@ section {
 /* ===== Speakers Section ===== */
 .speakers {
     background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-circle {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid;
+    background: transparent;
+    opacity: 0.5;
+    animation: float-drift 30s ease-in-out infinite;
+}
+
+@keyframes float-drift {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(var(--drift-x), var(--drift-y));
+    }
+}
+
+.speakers .container {
+    position: relative;
+    z-index: 1;
 }
 
 .speakers-grid {
@@ -504,6 +540,13 @@ section {
 /* ===== Venue Section ===== */
 .venue {
     background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.venue .container {
+    position: relative;
+    z-index: 1;
 }
 
 .venue-content {

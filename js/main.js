@@ -173,6 +173,51 @@
         lastScrollTop = scrollTop;
     });
 
+    // ===== Floating Circles =====
+    function createFloatingCircles(container, numCircles) {
+        const colors = [
+            'var(--primary-color)',
+            'var(--primary-contrast)',
+            'var(--accent)'
+        ];
+
+        for (let i = 0; i < numCircles; i++) {
+            const circle = document.createElement('div');
+            circle.className = 'floating-circle';
+
+            // Random position
+            circle.style.left = Math.random() * 100 + '%';
+            circle.style.top = Math.random() * 100 + '%';
+
+            // Random color
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            circle.style.borderColor = color;
+
+            // Random drift direction (between -75px and 75px)
+            const driftX = (Math.random() - 0.5) * 150 + 'px';
+            const driftY = (Math.random() - 0.5) * 150 + 'px';
+            circle.style.setProperty('--drift-x', driftX);
+            circle.style.setProperty('--drift-y', driftY);
+
+            // Random animation delay so they don't all move in sync
+            circle.style.animationDelay = Math.random() * 30 + 's';
+
+            container.appendChild(circle);
+        }
+    }
+
+    // Speakers section - 36 circles
+    const speakersCircles = document.querySelector('.speakers .floating-circles');
+    if (speakersCircles) {
+        createFloatingCircles(speakersCircles, 36);
+    }
+
+    // Venue section - 18 circles (half)
+    const venueCircles = document.querySelector('.venue .floating-circles');
+    if (venueCircles) {
+        createFloatingCircles(venueCircles, 18);
+    }
+
     // ===== Form Handling (for future use) =====
     // Placeholder for contact form or newsletter signup
 
