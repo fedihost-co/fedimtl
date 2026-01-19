@@ -99,8 +99,58 @@
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+
+                // Update URL hash to trigger :target CSS selector
+                history.pushState(null, null, href);
+
+                // Apply targeting behavior only to schedule and speaker links
+                if (href.startsWith('#schedule-') || href.startsWith('#speaker-')) {
+                    target.classList.add('targeted');
+                    setTimeout(() => {
+                        target.classList.remove('targeted');
+                        // Clear the hash to remove :target styling
+                        const scrollPos = window.scrollY;
+                        window.location.hash = '';
+                        window.scrollTo(0, scrollPos);
+                    }, 3000);
+                }
             }
         });
+    });
+
+    // ===== Handle Direct Hash Links =====
+    // If page loads with a schedule or speaker hash, clear it after 3 seconds
+    function clearTargetedElement() {
+        const hash = window.location.hash;
+        if (hash && (hash.startsWith('#schedule-') || hash.startsWith('#speaker-'))) {
+            const target = document.querySelector(hash);
+            if (target) {
+                target.classList.add('targeted');
+                setTimeout(() => {
+                    target.classList.remove('targeted');
+                    // Remove hash and force :target to clear
+                    const scrollPos = window.scrollY;
+                    window.location.hash = '';
+                    window.scrollTo(0, scrollPos);
+                }, 3000);
+            }
+        }
+    }
+    clearTargetedElement();
+
+    // ===== Clickable Speaker Cards =====
+    document.querySelectorAll('.speaker-card').forEach(card => {
+        const link = card.querySelector('.speaker-name a');
+        if (link) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function(e) {
+                // Don't trigger if clicking the link itself (let it handle naturally)
+                if (e.target.tagName === 'A' || e.target.closest('a')) {
+                    return;
+                }
+                link.click();
+            });
+        }
     });
 
     // ===== Mobile Menu Toggle (if needed in future) =====
