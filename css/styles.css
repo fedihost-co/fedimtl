@@ -6,11 +6,8 @@
     --primary-contrast: #002642;
     --accent: #E59500;
 
-
-
     --dark: #02040F;
     --light: #E5DADA;
-
     --white: #FAF8F8;
 
     --shadow-sm: 0 1px 3px rgba(2, 4, 15, 0.1);
@@ -329,8 +326,8 @@ section {
 
 .floating-circle {
     position: absolute;
-    width: 2rem;
-    height: 2rem;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     border: 1px solid;
     background: transparent;
@@ -382,6 +379,11 @@ section {
     transition: var(--transition-target);
 }
 
+.speaker-card:target .speaker-image,
+.speaker-card.targeted .speaker-image {
+    border-color: var(--primary-color);
+}
+
 .speaker-image {
     width: 150px;
     height: 150px;
@@ -389,6 +391,12 @@ section {
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--primary-contrast);
+    transition: var(--transition-hover);
+}
+
+.speaker-card:target .speaker-image,
+.speaker-card.targeted .speaker-image {
+    transition: var(--transition-target);
 }
 
 .speaker-image img {
@@ -435,7 +443,7 @@ section {
 }
 
 .speakers-cta-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 1.5rem;
@@ -571,7 +579,22 @@ section {
 .venue-address {
     font-size: 1.125rem;
     color: var(--primary-contrast);
+    margin-bottom: 1rem;
+}
+
+.map-providers {
+    display: flex;
+    gap: 1rem;
     margin-bottom: 2rem;
+}
+
+.map-providers a {
+    color: var(--primary-contrast);
+    transition: var(--transition-hover);
+}
+
+.map-providers a:hover {
+    color: var(--primary-color);
 }
 
 .venue-details,
@@ -592,39 +615,30 @@ section {
 }
 
 .venue-map {
-    position: relative;
+    background: var(--primary-contrast);
+    border: 2px solid var(--primary-contrast);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-md);
 }
 
-.venue-map a {
+.venue-map iframe {
     display: block;
-    position: relative;
-}
-
-.venue-map img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    border: none;
+}
+
+.venue-map .map-link {
     display: block;
-}
-
-.map-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: color-mix(in srgb, var(--accent) 90%, transparent);
-    color: white;
-    padding: 1rem;
+    color: var(--white);
+    font-weight: 700;
     text-align: center;
-    font-weight: 600;
-    opacity: 0;
-    transition: var(--transition-hover);
+    padding: 1rem 2rem 1.25rem;
 }
 
-.venue-map a:hover .map-overlay {
-    opacity: 1;
+.venue-map .map-link:hover {
+    color: var(--light);
 }
 
 /* ===== Registration Section ===== */
@@ -680,6 +694,13 @@ section {
     background: var(--primary-contrast);
     color: white;
     padding: 3rem 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-footer .container {
+    position: relative;
+    z-index: 1;
 }
 
 .footer-content {
@@ -747,7 +768,7 @@ section {
 }
 
 .dev-overlay-content {
-    background: var(--white);
+    background: var(--light);
     padding: 3rem;
     border-radius: var(--border-radius);
     text-align: center;

@@ -212,6 +212,12 @@
         ]);
     }
 
+    // Footer section - 10 circles (white only)
+    const footerCircles = document.querySelector('.site-footer .floating-circles');
+    if (footerCircles) {
+        createFloatingCircles(footerCircles, 10, ['var(--white)']);
+    }
+
     // ===== Form Handling (for future use) =====
     // Placeholder for contact form or newsletter signup
 
