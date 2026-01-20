@@ -54,4 +54,19 @@ A bilingual (English/French) single-page website for the FediMTL conference on d
 - [x] Make the text "Canadian Civil" a link to canadiancivil.com
 - [x] Standardize the text of all links (Not it buttons) to use the Primary red
   color
-- [ ] Use the ondark logo for the logo in the footer
+- [x] Use the ondark logo for the logo in the footer
+- [x] The speaker names in the Event Schedule should be primary red because they
+  are links
+- [x] The roles for the featured speakers like "Head of Social & Community,
+  Newsmast" should be using the accent orange color
+- [x] Update the text links for the address to use Open Street Maps instead of
+  Google
+- [x] When you click on a speakers name in the event schedule the border of
+  their card should also turn primary red and thicken to 4px before returning
+- [x] Make FediHost a link, Qlub, Social Web Foundation, Newsmast, NodeBB,
+  Spritely Institue
+- [x] For the links in the featured speakers section, just inherit the color of
+  the text and only change to primary red when hovering
+- [x] Add a link to the Activity Pub website
+- [x] Make the Le Ministere text in the heading go to the page venue section if
+  clicked, this link should stay looking like regular text
