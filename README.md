@@ -37,3 +37,15 @@ A bilingual (English/French) single-page website for the FediMTL conference on d
 - [x] Below the address for Le Ministere put a small SVG icon for Google, Apple and Open
   Street Maps with a link to the address on each.
 - [x] Make Paige the lowest positioned speaker
+- [x] Swap the navigation menu so that the language toggle is always on the
+  top right
+- [x] On mobile evenly spread out the menu links for About, Speakers, Schedule,
+  Venue and Register so that the fill the horizontal space and the edge of the
+  buttons line up with the logo and language toggle above it
+- [x] On Mobile reduce the amount that the event schdule items move by 10px when
+  a speaker is selected
+- [ ] Make the text for the Mont-Royal station link to that station's address
+  with a map link on popular navigation tools, do the same for the street
+  address above
+- [ ] Increase the font size of the "A conference on digital sovereignty and the
+  social web" to match the other headings

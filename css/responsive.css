@@ -22,6 +22,14 @@
         justify-content: space-between;
     }
 
+    .lang-toggle {
+        order: 2;
+    }
+
+    .nav-links {
+        order: 1;
+    }
+
     /* Typography */
     h1 {
         font-size: 3rem;
@@ -110,14 +118,23 @@
     .nav-links {
         grid-column: 1 / -1;
         grid-row: 2;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
         width: 100%;
     }
 
     .nav-links li {
-        flex: 0 0 auto;
+        flex: 1 1 0;
+        text-align: center;
+    }
+
+    .nav-links li:first-child {
+        text-align: left;
+    }
+
+    .nav-links li:last-child {
+        text-align: right;
     }
 
     /* Hero */
@@ -175,6 +192,11 @@
     .schedule-item {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .schedule-item:target,
+    .schedule-item.targeted {
+        transform: translateX(10px);
     }
 
     .schedule-time {
