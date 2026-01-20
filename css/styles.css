@@ -81,7 +81,7 @@ p {
 }
 
 a {
-    color: var(--accent);
+    color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition-hover);
 }
@@ -222,7 +222,8 @@ a:hover {
 }
 
 .hero-tagline {
-    font-size: 1.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 2rem;
     opacity: 0.95;
 }
@@ -708,6 +709,12 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 1rem;
 }
 
 .footer-section h3,

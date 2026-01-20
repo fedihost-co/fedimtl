@@ -44,8 +44,14 @@ A bilingual (English/French) single-page website for the FediMTL conference on d
   buttons line up with the logo and language toggle above it
 - [x] On Mobile reduce the amount that the event schdule items move by 10px when
   a speaker is selected
-- [ ] Make the text for the Mont-Royal station link to that station's address
+- [x] Make the text for the Mont-Royal station link to that station's address
   with a map link on popular navigation tools, do the same for the street
   address above
-- [ ] Increase the font size of the "A conference on digital sovereignty and the
+- [x] Increase the font size of the "A conference on digital sovereignty and the
   social web" to match the other headings
+- [x] Make the text "GoToSocial" a link to that account
+- [x] Swap out the FediMTL text in the footer for the logo
+- [x] Make the text "Canadian Civil" a link to canadiancivil.com
+- [x] Standardize the text of all links (Not it buttons) to use the Primary red
+  color
+- [ ] Use the ondark logo for the logo in the footer
