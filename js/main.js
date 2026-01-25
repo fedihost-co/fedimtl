@@ -3,37 +3,6 @@
 (function() {
     'use strict';
 
-    // ===== Development Overlay =====
-    const devOverlay = document.getElementById('dev-overlay');
-    const acceptButton = document.getElementById('accept-overlay');
-
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-        return null;
-    }
-
-    function setCookie(name, value, hours) {
-        const date = new Date();
-        date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
-        document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
-    }
-
-    if (devOverlay) {
-        // Check if user has already accepted within the last 24 hours
-        if (getCookie('fedimtl-dev-accepted')) {
-            devOverlay.classList.add('hidden');
-        }
-
-        if (acceptButton) {
-            acceptButton.addEventListener('click', function() {
-                devOverlay.classList.add('hidden');
-                setCookie('fedimtl-dev-accepted', 'true', 24);
-            });
-        }
-    }
-
     // ===== Language Toggle =====
     const html = document.documentElement;
     const langToggle = document.getElementById('lang-toggle');
@@ -199,7 +168,7 @@
     // Speakers section - 36 circles (white only)
     const speakersCircles = document.querySelector('.speakers .floating-circles');
     if (speakersCircles) {
-        createFloatingCircles(speakersCircles, 36, ['var(--white)']);
+        createFloatingCircles(speakersCircles, 36, ['var(--off-white)']);
     }
 
     // Venue section - 18 circles (mixed colors)
@@ -215,7 +184,7 @@
     // Footer section - 10 circles (white only)
     const footerCircles = document.querySelector('.site-footer .floating-circles');
     if (footerCircles) {
-        createFloatingCircles(footerCircles, 10, ['var(--white)']);
+        createFloatingCircles(footerCircles, 10, ['var(--off-white)']);
     }
 
     // ===== Form Handling (for future use) =====

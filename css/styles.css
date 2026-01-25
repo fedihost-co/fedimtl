@@ -8,7 +8,7 @@
 
     --dark: #02040F;
     --light: #E5DADA;
-    --white: #FAF8F8;
+    --off-white: #FAF8F8;
 
     --shadow-sm: 0 1px 3px rgba(2, 4, 15, 0.1);
     --shadow-md: 0 4px 6px rgba(2, 4, 15, 0.15);
@@ -114,7 +114,7 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--white);
+    background: var(--off-white);
     color: var(--primary-color);
 }
 
@@ -294,7 +294,7 @@ section {
 }
 
 .highlight {
-    background: var(--white);
+    background: var(--off-white);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
@@ -360,7 +360,7 @@ section {
 }
 
 .speakers .section-title {
-    color: var(--white);
+    color: var(--off-white);
 }
 
 .speakers-grid {
@@ -370,7 +370,7 @@ section {
 }
 
 .speaker-card {
-    background: var(--white);
+    background: var(--off-white);
     border: 1px solid var(--dark);
     border-radius: var(--border-radius);
     padding: 2rem;
@@ -472,7 +472,7 @@ section {
 .speakers-cta-text {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--off-white);
     margin-bottom: 1.5rem;
 }
 
@@ -499,7 +499,7 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: var(--white);
+    background: var(--off-white);
     border-radius: var(--border-radius);
     border-left: 4px solid var(--primary-contrast);
     box-shadow: var(--shadow-sm);
@@ -580,7 +580,7 @@ section {
 
 /* ===== Venue Section ===== */
 .venue {
-    background: var(--white);
+    background: var(--off-white);
     position: relative;
     overflow: hidden;
 }
@@ -658,7 +658,7 @@ section {
 
 .venue-map .map-link {
     display: block;
-    color: var(--white);
+    color: var(--off-white);
     font-weight: 700;
     text-align: center;
     padding: 1rem 2rem 1.25rem;
@@ -718,7 +718,8 @@ section {
 
 /* ===== Sponsors Section ===== */
 .sponsors {
-    background: var(--white);
+    background: url('../images/background/WallsBackgroundWhite.svg') center/cover no-repeat;
+    background-color: var(--off-white);
     text-align: center;
 }
 
@@ -813,40 +814,3 @@ section {
     margin: 0;
 }
 
-/* ===== Development Overlay ===== */
-.dev-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(39, 24, 126, 0.95);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dev-overlay.hidden {
-    display: none;
-}
-
-.dev-overlay-content {
-    background: var(--light);
-    padding: 3rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-    max-width: 500px;
-    box-shadow: var(--shadow-lg);
-}
-
-.dev-overlay-content p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-contrast);
-    margin-bottom: 2rem;
-}
-
-.dev-overlay-content .btn {
-    min-width: 150px;
-}
