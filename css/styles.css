@@ -716,6 +716,37 @@ section {
     font-style: italic;
 }
 
+/* ===== Sponsors Section ===== */
+.sponsors {
+    background: var(--white);
+    text-align: center;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.sponsor-logo {
+    display: block;
+    transition: var(--transition-hover);
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.sponsor-logo img {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+}
+
 /* ===== Footer ===== */
 .site-footer {
     background: var(--primary-contrast);
