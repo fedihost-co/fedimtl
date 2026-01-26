@@ -70,7 +70,8 @@ A bilingual (English/French) single-page website for the FediMTL conference on d
 - [x] Add a link to the Activity Pub website
 - [x] Make the Le Ministere text in the heading go to the page venue section if
   clicked, this link should stay looking like regular text
-- [ ] When the border of the speaker profile increases width after clicking on
+- [x] When the border of the speaker profile increases width after clicking on
   an event schedule name, decrease the  padding on the interior by the same
   amount so that the text still flows the same amount.
-- [ ] Add a sponsors section to the footer which has the logos for 
+- [x] Add a sponsors section to the footer which has the logos for 
+- [x] Make Qlub link in the sponsors section go to qlub.social not qlub.ca
