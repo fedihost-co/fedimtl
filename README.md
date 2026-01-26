@@ -73,3 +73,4 @@ A bilingual (English/French) single-page website for the FediMTL conference on d
 - [ ] When the border of the speaker profile increases width after clicking on
   an event schedule name, decrease the  padding on the interior by the same
   amount so that the text still flows the same amount.
+- [ ] Add a sponsors section to the footer which has the logos for 
