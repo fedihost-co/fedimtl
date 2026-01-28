@@ -710,8 +710,23 @@ section {
     margin-bottom: 1rem;
 }
 
+.ticket-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.ticket-note {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
 .register-note {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     opacity: 0.8;
     font-style: italic;
 }
