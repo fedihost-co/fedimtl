@@ -610,6 +610,14 @@ section {
     text-decoration: underline;
 }
 
+.schedule-attendance {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary-contrast);
+    margin-top: 0.25rem;
+}
+
 /* ===== Venue Section ===== */
 .venue {
     background: var(--off-white);
