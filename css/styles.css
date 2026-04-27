@@ -841,22 +841,7 @@ section {
     line-height: 1.8;
 }
 
-/* ===== Talks / Video Grid ===== */
-.talks {
-    background: var(--off-white);
-    padding: 5rem 0;
-}
-
-.talks .section-title {
-    text-align: center;
-}
-
-.videos-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-}
-
+/* ===== Speaker Card Video ===== */
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -865,6 +850,7 @@ section {
     border-radius: var(--border-radius);
     background: var(--dark);
     box-shadow: var(--shadow-md);
+    margin-top: 1.5rem;
 }
 
 .video-wrapper iframe {
@@ -875,13 +861,6 @@ section {
     height: 100%;
     border: 0;
     border-radius: var(--border-radius);
-}
-
-.video-caption {
-    margin-top: 0.625rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--primary-contrast);
 }
 
 /* ===== Footer ===== */
