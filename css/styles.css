@@ -841,6 +841,50 @@ section {
     line-height: 1.8;
 }
 
+/* ===== Talks / Video Grid ===== */
+.talks {
+    background: var(--off-white);
+    padding: 5rem 0;
+}
+
+.talks .section-title {
+    text-align: center;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    background: var(--dark);
+    box-shadow: var(--shadow-md);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: var(--border-radius);
+}
+
+.video-caption {
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary-contrast);
+}
+
+/* ===== Footer ===== */
 .footer-section a {
     color: rgba(255, 255, 255, 0.8);
     transition: var(--transition-hover);

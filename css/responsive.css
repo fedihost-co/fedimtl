@@ -89,6 +89,13 @@
     }
 }
 
+/* ===== Videos Grid: Tablet ===== */
+@media (max-width: 1023px) {
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ===== Mobile: Below 768px ===== */
 @media (max-width: 767px) {
     /* Header - Logo left, lang toggle right, links below */
@@ -217,6 +224,13 @@
 
     .footer-links {
         margin-bottom: 1rem;
+    }
+}
+
+/* ===== Videos Grid: Single column on small mobile ===== */
+@media (max-width: 479px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
     }
 }
 
